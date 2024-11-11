@@ -1,6 +1,8 @@
 #include <stdio.h>
 int stringCount(char* string);
 
+//The code below is not contain any built-in string functions or other things it is written by a coder.
+
 int main(void){
     char* strings[6] = {"battleship", "boot", "cannon", "iron", "thimble","top hat"};
     char target[100];

@@ -12,11 +12,11 @@ typedef struct
 int main(void){
     person people[3];
     people[0].name = "Kemal";
-    people[0].number = "05010516868";
+    people[0].number = "050124242123";
     people[1].name = "Ekrem";
-    people[1].number = "05327627670";
+    people[1].number = "132132141243";
     people[2].name = "Cennet";
-    people[2].number = "05055915387";
+    people[2].number = "012418515152";
 
     char name[100];
     printf("Whose phone number do you want to learn: ");

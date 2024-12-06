@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+
+
 char* get_string(char *prompt){
-    char* value = malloc(200 * sizeof(char));
+    char* value = malloc(200 * sizeof(char)); // It will return the first adress 
     printf("%s: ",prompt);
     scanf("%s", value);
     return value;
@@ -27,5 +30,7 @@ int main(void){
     char* nameCopy = malloc(size_of_string(name + 1) * sizeof(*name));
     string_copy(name,nameCopy);
     printf("%s\n",nameCopy);
-
+    strcpy(nameCopy,name); // it is exactly same with the string_copy function
+    printf("%s\n",nameCopy);
+    free(nameCopy);
 }

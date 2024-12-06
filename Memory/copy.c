@@ -4,6 +4,11 @@
 
 
 char* get_string(char *prompt){
+    /*
+        In C, NULL is a macro that represents a null pointer, 
+        which is a pointer that does not point to any valid memory location. 
+        It is often used to indicate that a pointer is not currently assigned to any object or memory.
+    */
     char* value = malloc(200 * sizeof(char)); // It will return the first adress 
     printf("%s: ",prompt);
     scanf("%s", value);

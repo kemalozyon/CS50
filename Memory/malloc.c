@@ -16,4 +16,5 @@ int main(void)
     }
     printf("\n");
     return 0;
+    free(arr); // It is important to call free to make memory empty and reuse the space again.  
 }

@@ -13,5 +13,12 @@ int main(void){
     for (int i = 0; i < n; i++){
         printf("Garbage %d: %d \n", i+1, address[i]);
     }
-    return 0; 
+    int* x; 
+    int* y;
+    x = malloc(sizeof(int));
+    *x = 42;
+    //*y = 13; -> To write this code is wrong thing due to the fact that y has not been allocated memory
+    y = x;
+    *y = 13;
+    printf("%d",*x); // It will write 13 
 }

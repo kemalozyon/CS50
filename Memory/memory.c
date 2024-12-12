@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 int get_int(char* prompt){
     int number;
     printf("%s",prompt);
